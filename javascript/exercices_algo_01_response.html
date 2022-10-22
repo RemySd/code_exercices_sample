@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Javascript exercices</title>
+    </head>
+    <body>
+        <script>
+            /* 
+            Exercice 1
+            
+            Transformer une chaine de caractere ecrite en minuscule en majuscule
+            "hello" devient "HELLO"
+            */
+
+            let word = 'hello';
+
+            console.log(word.toUpperCase());
+
+            console.log('---');
+
+            /* 
+            Exercice 2
+            
+            Créer une liste (array) puis ajouter le mot "test" dans la liste
+            */
+
+            let myArray = [];
+            myArray.push('test');
+
+            console.log(myArray);
+            
+            console.log('---');
+
+            /* 
+            Exercice 3
+            
+            Créer une fonction qui prend 2 paramètre de type int et retourne le résultat des 2 chiffres fournie
+            En soit refaire une fonction qui reproduit le fonctionnement d'une addition.
+            */
+
+            function addition(number1, number2) {
+                return number1 + number2;
+            }
+
+            console.log(addition(4, 7));
+
+            console.log('---');
+
+            /* 
+            Exercice 4
+            
+            Retourner la taille de la liste
+            */
+
+            legumes = ['haricot', 'courgette', 'carotte'];
+
+            console.log(legumes.length);
+
+            console.log('---');
+
+            /* 
+            Exercice 5
+            
+            Afficher l'ensemble des mots suivant à l'aide d'une boucle (un console.log sur chaque mot suffira)
+            */
+
+            objets = ['marteau', 'pelle', 'souris', 'ecran', 'verre', 'cahiers'];
+
+            for (let index = 0; index < objets.length; index++) {
+                console.log(objets[index]);
+            }
+
+            console.log('---');
+
+            /* 
+            Exercice 6
+            
+            Générer un nombre aléatoire compris entre 1 (inclus) et 10 (inclus)
+            */
+
+            /* 
+            Exercice 7
+            
+            Trouver le chifre le plus élevé dans le tableau suivant
+            */
+
+            numberList = [45, 99, 2, 567, 999, 10, 30];
+
+            console.log(Math.max(...numberList));
+
+            console.log('---');
+
+            /* 
+            Exercice 8
+            
+            Créer une fonction qui prend deux argument et qui vient les concaténer en un seul mot sur le retour de la fonction
+            */
+
+            mot1 = 'bonjour';
+            mot2 = 'au revoir';
+
+            function concat(part1, part2) {
+                return part1 + ' ' + part2;
+            }
+
+            console.log(concat(mot1, mot2));
+
+            console.log('---');
+
+            /* 
+            Exercice 8
+            
+            Trouver une fonction qui permet de savoir si les valeurs suivantes sont des chiffres
+            */
+
+            value1 = 3;
+            value2 = 3.4;
+            value3 = '3';
+            value4 = 'abc';
+
+            console.log(typeof(value1));
+            console.log(typeof(value2));
+            console.log(typeof(value3));
+            console.log(typeof(value4));
+
+            console.log('---');
+
+            /* 
+            Exercice 9
+            
+            Créer une fonction qui permet de savoir si un chiffre est pair ou non
+            */
+
+            function isEven(number) {
+                return number % 2 === 0;
+            }
+
+
+            console.log(isEven(3));
+            console.log(isEven(4));
+
+            console.log('---');
+
+            /* 
+            Exercice 10
+            
+            Voici un nombre binaire => 10010
+            Créer une fonction qui compte le nombre de 1 dedans => résultat 2
+            */
+
+            function countBinaryOne(binaryNumber) {
+                return (binaryNumber.toString().match(/1/g)||[]).length;
+            }
+
+            console.log(countBinaryOne(101010));
+
+        </script>
+    </body>
+</html>

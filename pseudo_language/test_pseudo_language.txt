@@ -1,0 +1,20 @@
+Exercice 1
+            
+Il faut que toutes les lettres "o" deviennent des "0" mais si le mot possède une lettre "i" on ne fais rien
+Exemple du résultat :
+haricot => haricot, courgette => c0urgette, carotte => car0tte
+
+-----
+
+legumes = ['haricot', 'courgette', 'carotte’]
+
+Parcourir le tableau "legumes"
+
+    # ici travaille sur un mot qui appel legume
+	si legume contient un "o" et ne contient pas de "i"
+
+        Tranformer le "o" en "0"
+    
+    sinon
+    
+        ne rien faire
